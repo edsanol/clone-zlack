@@ -93,7 +93,7 @@
   cursor: pointer;
 }
 
-.body__register:hover {
+.body__button-register:hover {
   background-color: #73257c;
 }
 
