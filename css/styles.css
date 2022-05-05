@@ -63,7 +63,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: auto; */
 }
 .body__form {
   display: flex;
@@ -82,7 +81,7 @@
 .body__form-label {
   margin-top: 8px;
 }
-.body__register {
+.body__button-register {
   margin-top: 20px;
   padding: 10px;
   background-color: #611f69;
@@ -140,4 +139,17 @@
 .footer a:hover {
   color: #105b95;
   text-decoration: underline #105b95;
+}
+
+@media (max-width: 420px) {
+  .head__title,
+  .head__logo-slack {
+    margin: auto;
+  }
+  .head__button-login-google,
+  .head__decoration,
+  .body__form {
+    width: 350px;
+    margin: auto;
+  }
 }
