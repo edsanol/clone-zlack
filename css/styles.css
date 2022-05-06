@@ -1,0 +1,155 @@
+* {
+  font-family: 'Lato';
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+}
+.head__logo-slack {
+  width: 140px;
+}
+
+.head__title {
+  font-size: 48px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.head__logo-google {
+  width: 16px;
+  padding-right: 20px;
+}
+
+.head__button-login-google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #4285f4;
+  border-radius: 5px;
+  color: #4285f4;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 400px;
+  height: 44px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.head__button-login-google:hover {
+  box-shadow: 1px 1px 2px 2px lightgray;
+}
+.head__decoration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.head__decoration-line {
+  background-color: lightgray;
+  height: 1px;
+  width: 150px;
+}
+.head__decoration-text {
+  text-align: center;
+  width: 100px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body__form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+}
+
+.body__form-input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  color: lightgrey;
+  margin-top: 4px;
+}
+.body__form-label {
+  margin-top: 8px;
+}
+.body__button-register {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #611f69;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.body__button-register:hover {
+  background-color: #73257c;
+}
+
+.body__link {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.body__link p {
+  color: #616061;
+  margin-bottom: 5px;
+}
+
+.body__link a {
+  text-decoration: none;
+  color: #1264a3;
+}
+
+.body__link a:hover {
+  text-decoration: underline #105b95;
+  color: #105b95;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #696969;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.footer a:hover {
+  color: #105b95;
+  text-decoration: underline #105b95;
+}
+
+@media (max-width: 420px) {
+  .head__title,
+  .head__logo-slack {
+    margin: auto;
+  }
+  .head__button-login-google,
+  .head__decoration,
+  .body__form {
+    width: 350px;
+    margin: auto;
+  }
+}
