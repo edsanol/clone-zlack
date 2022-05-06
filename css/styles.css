@@ -121,7 +121,9 @@
   text-decoration: underline #105b95;
   color: #105b95;
 }
-
+.pin__magic {
+  text-align: justify;
+}
 .footer {
   display: flex;
   flex-direction: row;
