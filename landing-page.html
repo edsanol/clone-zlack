@@ -9,218 +9,317 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/landing-page.css" />
   </head>
   <body>
-    <header class="Header">
-      <nav class="header-nav container">
-        <div class="Header-div-left">
+    <!-- HEADER -->
+
+    <header class="header">
+      <nav class="header__nav">
+
+        <!-- HEADER LEFT -->
+        <div class="header__div-left">
           <div>
-            <a href="#" class="Header-a-red">
-              <i class="bx bxs-circle"></i>
-            </a>
-          </div>
-          <div>
-            <a href="#" class="Header-a-yellow">
-              <i class="bx bxs-circle"></i>
-            </a>
-          </div>
-          <div>
-            <a href="#" class="Header-a-green">
+            <a href="#" class="header__a">
               <i class="bx bxs-circle"></i>
             </a>
           </div>
         </div>
 
-        <div class="Header-div-center">
-          <div class="Header-div-icons">
+        <!-- HEADER CENTER -->
+        <div class="header__div-center">
+          <div class="header__div-icons">
             <div>
-              <a href="#" class="Header-nav-arrow">
+              <a href="#" class="header__nav-arrow">
                 <i class="bx bx-left-arrow-alt"></i>
               </a>
             </div>
             <div>
-              <a href="#" class="Header-nav-arrow">
+              <a href="#" class="header__nav-arrow">
                 <i class="bx bx-right-arrow-alt"></i>
               </a>
             </div>
             <div>
-              <a href="#" class="Header-nav-arrow">
+              <a href="#" class="header__nav-arrow">
                 <i class="bx bx-time"></i>
               </a>
             </div>
           </div>
 
-          <div class="Header-div-input">
+          <div class="header__div-input">
             <input
               type="text"
-              placeholder="Search DesignersKR"
-              class="input-search" />
+              placeholder=" &#xf002;   Search DesignersKR"
+              class="input-search"
+              style="font-family:'Lato', FontAwesome"
+            />
           </div>
 
-          <div class="Header-div-question">
-            <p>?</p>
-          </div>
+            <a href="#" class="header__div-question">
+              <p>?</p>
+              <span class="bagde"> </span>
+            </a>
         </div>
 
-        <div class="Header-div-right">
-          <div class="Header-perfil"></div>
-          <div class="Header-flag"></div>
+        <!-- HEADER RIGHT -->
+        <div class="header__div-right">
+          <div class="header__perfil">
+            <span class="bagde"> </span>
+          </div>
+          <div class="header__flag">
+            <p>&#x262f;&#xfe0f;</p>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="Main">
-      <aside class="Main-aside">
-        <section class="Main-aside-sectionWorkspace">
+    <!-- HEADER -->
+
+    <!-- SIDEBAR -->
+
+    <main class="main">
+      <aside class="main__aside">
+        <section class="main__aside-sectionWorkspace">
           <div class="box-workspace">A</div>
           <div class="box-workspace">B</div>
+          <span class="isActive"></span>
           <div class="box-workspace seleccionado">C</div>
           <div class="box-workspace-plus">+</div>
         </section>
 
-        <section class="Main-aside-sectionChannels">
-          <div class="Main-channels-header">
+        <section class="main__aside-sectionChannels">
+          <div class="main__channels-header">
             <h2>DesignersKR</h2>
-            <div class="Main-chanels-header-icon">
+            <div class="main__chanels-header-icon">
               <i class="bx bx-edit"></i>
             </div>
           </div>
 
-          <div class="Main-section-channels-options">
-            <div class="Main-chanels-input">
-              <input
-                type="text"
-                placeholder="Search DesignersKR"
-                class="input-channels-search" />
-            </div>
-            <a href="#" class="channels-options">Mentions & reactions</a>
-            <a href="#" class="channels-options">Saved items</a>
-            <a href="#" class="channels-options">More</a>
-          </div>
+          <ul class="main__sectionChannels-options">
+            <li><i class="fa-solid fa-at"></i><a href="#" class="channels-options">Mentions & reactions</a></li>
+            <li><i class='bx bx-bookmark' ></i><a href="#" class="channels-options">Saved items</a></li>
+            <li><i class='bx bx-dots-vertical-rounded' ></i><a href="#" class="channels-options active">More</a></li>
+          </ul>
 
-          <div class="section--channels-title">
-            <h2>Channels</h2>
-          </div>
+          <ul class="main__sectionChannels-channels">
+            <li>
+              <a href="#"><i class='bx bx-chevron-right icon-right' ></i>ㅤChannels</a>
+                <ul class="main__sectionChannels-dropdown">
+                  <li><a href="#"># ㅤClubhouse</a></li>
+                  <li><a href="#"># ㅤdkr-webinar</a></li>
+                  <li><a href="#"># ㅤenglish</a></li>
+                  <li><a href="#"># ㅤjob_posting</a></li>
+                  <li><a href="#"># ㅤtalks</a></li>
+                  <li><a href="#"># ㅤuxui_design</a></li>
+                  <li><a href="#"># ㅤ아무말</a></li>
+                  <li><i class='bx bxs-plus-square' ></i><a href="#">ㅤAdd channels</a></li>
+                </ul>
+            </li>
+          </ul>
 
-          <div class="Main-section-channels-options">
-            <a href="#" class="channels-options"># clubhouse</a>
-            <a href="#" class="channels-options"># dkr-webinar</a>
-            <a href="#" class="channels-options"># english</a>
-            <a href="#" class="channels-options"># job-posting</a>
-            <a href="#" class="channels-options"># talks</a>
-            <a href="#" class="channels-options select"># uxui_design</a>
-            <a href="#" class="channels-options"># 아무말</a>
-          </div>
+          <ul class="main__sectionChannels-channels">
+            <li>
+              <a href="#"><i class='bx bx-chevron-right icon-right' ></i>ㅤDirect messages</a>
+                <ul class="main__sectionChannels-dropdown">
+                  <li><img src="src/img/Rectangle.png" alt=""><a href="#">ㅤ jiwon</a><span></span></li>
+                  <li><img src="src/img/Rectangle-1.png" alt=""><a href="#">ㅤ Alley</a><span></span></li>
+                  <li><img src="src/img/Rectangle-5.png" alt=""><a href="#">ㅤ Cameron</a><span class="isAbsent"></span></li>
+                  <li><img src="src/img/Rectangle-6.png" alt=""><a href="#">ㅤ hojae</a><span class='isInactive'></span></li>
+                  <li><i class='bx bxs-plus-square' ></i><a href="#">ㅤ Add Teammates</a></li>
+                  <li></i><a href="#"></a></li>
+                </ul>
+            </li>
+          </ul>
 
-          <div class="section--channels-title">
-            <h2>Direct messages</h2>
-          </div>
-
-          <div class="Main-section-channels-options">
-            <a href="#" class="channels-options">jiwon</a>
-            <a href="#" class="channels-options">Alley</a>
-            <a href="#" class="channels-options">Cameron</a>
-            <a href="#" class="channels-options">Add Teammates</a>
-          </div>
         </section>
+
       </aside>
 
-      <section class="Main-interface">
-        <div class="Main-section-menuIcon">
-          <i class="bx bx-menu"></i>
-        </div>
+      <!-- SIDEBAR -->
 
-        <div class="Interface-header">
-          <div class="Interface-header-title">
-            <h2># uxui_design</h2>
-            <p>📱 UX/UI, 프로덕트 디자이너분들</p>
-          </div>
-          <div class="Interface-header-img">
-            <img
-              class="Interface_header_img1"
-              src="src/img/Rectangle.png"
-              alt="img1" />
-            <img
-              class="Interface_header_img2"
-              src="src/img/Rectangle-1.png"
-              alt="img2" />
-            <img
-              class="Interface_header_img3"
-              src="src/img/Rectangle-2.png"
-              alt="img3" />
-            <p>493</p>
-            <div class="icon-userNew">
-              <i id="icon-userNew" class="bx bx-user-plus"></i>
+      <!-- CHAT -->
+
+        <section class="main__chat">
+          
+          <section class="main__message">
+
+            <div class="main__message-header">
+
+              <div class="message-header-left">
+                <span class="online"></span>
+                <h2>hojae <span>&#x2b50;</span></h2>
+                <p>&#x1f60a;</p>
+              </div>
+              <div class="message-header-right">
+                <i class='bx bx-phone'></i>
+                <i class='bx bx-info-circle' ></i>
+              </div>
+
             </div>
-            <div class="icon-exclamation">
-              <i id="icon-exclamation" class="bx bx-alarm-exclamation"></i>
+
+            <div class="main__message-ad">
+              <div class="message-ad">
+                <h2>Unlock messages prior to February 29th in DesignersKR</h2>
+                <p>
+                  Arcu in aliquet ac nibh at porta nulla faucibus. Aliquam facilisi mus ac 
+                  arcu ultrices accumsan tortor fames donec. Risus morbi morbi elementu
+                </p>
+                <button>See Upgrade Options</button>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="Interface-space"></div>
+            <div class="main__message-content">
 
-        <div class="Interface-chat">
-          <div class="Interface-chat-img">
-            <img src="src/img/Rectangle-chat.png" alt="chat" />
-          </div>
-          <div class="Interface-chat-message">
-            <h3>Hyejin 🇩🇪</h3>
-            <p>
-              주며, 피가 지혜는 가지에 구하기 노래하며 사는가 때문이다. 끓는
-              얼마나 고동을 봄바람이다. 청춘의 싹이 거친 있을 너의 열락의
-              사라지지 품에 철환하였는가? 시들어 우리의 이상의 많이 보는 끓는
-              그와 그들을 위하여서. 이것은 뜨거운지라, 오아이스도 것이다. 따뜻한
-              평화스러운 못할 사는가 창공에 것이다. 위하여 있음으로써 위하여,
-              행복스럽고 눈에 구하기 살 가장 것이다. 열락의 무엇을 찬미를 작고
-              간에 긴지라 얼음이 든 때문이다. 청춘의 주며, 그들의 듣기만 청춘의
-              천지는 풀이 그리하였는가? 꽃이 청춘의 그들의 우리 위하여, 물방아
-              가치를 말이다. 속에서 사랑의 뼈 품으며, 것이다.
-            </p>
-            <img src="src/img/Rectangle.png" alt="" />
-            <img src="src/img/Rectangle-1.png" alt="" />
-            <img src="src/img/Rectangle-2.png" alt="" />
-            <p class="blue">8 replies</p>
-            <p class="gray">Last reply today at 3:12 AM</p>
-          </div>
-        </div>
+              <div class="message-content-chat">  
+                <div class="message-date">
+                  <p><strong>Monday, March 1st</strong></p>
+                </div>
+                <div class="content-chat-img">
+                  <img src="src/img/Rectangle-6.png" alt="">
+                </div>
+                <div class="content-chat-message">
+                  <h3>Hyejin &#x1f60e; <span>6:49 PM</span></h3>
+                  <p>
+                    것이 밥을 하는 산야에 얼마나 이 보라. 미인을 것은 아름답고 투명하되 미묘한 내려온 시들어 없는 꽃이 듣는다. 
+                    우는 인생에 그들에게 것이 교향악이다. 자신과 인류의 인간에 날카로우나 못할 피다. 뼈의 그들은 있
+                  </p>
+                </div>
+              </div>
 
-        <div class="Interface-chat">
-          <div class="Interface-chat-img">
-            <img src="src/img/Rectangle-chat.png" alt="chat" />
-          </div>
-          <div class="Interface-chat-message">
-            <h3>Hyejin 🇩🇪</h3>
-            <p>
-              주며, 피가 지혜는 가지에 구하기 노래하며 사는가 때문이다. 끓는
-              얼마나 고동을 봄바람이다. 청춘의 싹이 거친 있을 너의 열락의
-              사라지지 품에 철환하였는가? 시들어 우리의 이상의 많이 보는 끓는
-              그와 그들을 위하여서. 이것은 뜨거운지라, 오아이스도 것이다. 따뜻한
-              평화스러운 못할 사는가 창공에 것이다. 위하여 있음으로써 위하여,
-              행복스럽고 눈에 구하기 살 가장 것이다. 열락의 무엇을 찬미를 작고
-              간에 긴지라 얼음이 든 때문이다. 청춘의 주며, 그들의 듣기만 청춘의
-              천지는 풀이 그리하였는가? 꽃이 청춘의 그들의 우리 위하여, 물방아
-              가치를 말이다. 속에서 사랑의 뼈 품으며, 것이다.
-            </p>
-            <img src="src/img/Rectangle.png" alt="" />
-            <img src="src/img/Rectangle-1.png" alt="" />
-            <img src="src/img/Rectangle-2.png" alt="" />
-            <p class="blue">8 replies</p>
-            <p class="gray">Last reply today at 3:12 AM</p>
-          </div>
-        </div>
+              <div class="message-content-chat">  
+                <div class="message-date">
+                  <p><strong>Tuesday, March 2nd</strong></p>
+                </div>
+                <div class="message-icon">
+                  <i class='bx bx-smile' ></i>
+                  <i class='bx bx-message-rounded-dots'></i>
+                  <i class='bx bx-share'></i>
+                  <i class='bx bx-bookmark' ></i>
+                  <i class='bx bx-dots-vertical-rounded' ></i>
+                </div>
+                <div class="message-reaction">
+                  <span>&#x1f44d; 1</span>
+                </div>
+                <div class="content-chat-img">
+                  <img src="src/img/Rectangle-6.png" alt="">
+                </div>
+                <div class="content-chat-message">
+                  <h3>Hyejin &#x1f60e; <span>6:49 PM</span></h3>
+                  <p>
+                    것이 밥을 하는 산야에 얼마나 이 보라. 미인을 것은 아름
+                  </p>
+                </div>
+              </div>
 
-        <div class="Interface-key">
-          <p>Message # uxui_design</p>
-          <img src="src/img/Image-chat.png" alt="" />
-        </div>
-      </section>
+            </div>
+
+            <div class="chat-input">
+              <span style="margin-left: 20px; margin-top: 5px; color: #BBB">Messageㅤ</span>
+              <span style="margin-top: 5px; color: #BBB">hojae</span>
+              <div class="chat-input-down">
+                <i class='bx bx-plus-circle plus' ></i>
+                <img src="src/img/chat.png" alt="">
+                <i class='bx bxs-send' ></i>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="main__thread">
+
+            <div class="main__thread-header">
+
+              <div class="thread-header-left">
+                <h2>Thread</h2>
+                <p>#uxui_design</p>
+              </div>
+              <div class="thread-header-right">
+                <span>X</span>
+              </div>
+
+            </div>
+
+            <div class="main__thread-content">
+              
+              <div class="thread-content-chat">  
+                <div class="content-chat-img">
+                  <img src="src/img/Rectangle-6.png" alt="">
+                </div>
+                <div class="content-chat-thread">
+                  <h3>Hyejin &#x1f60e; <span>7 days ago</span></h3>
+                  <p>
+                    <span>@Bomie</span> 이성은 듣기만 낙원을 품으며, 사랑의 살 그들은 사랑의 있는가? 모래뿐일 영원히 만물은 사막이다. 하는 공자는 찾아 고행을 것이다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="thread-content-chat">  
+                <div class="content-chat-img">
+                  <img src="src/img/Rectangle-6.png" alt="">
+                </div>
+                <div class="content-chat-thread">
+                  <h3>Hyejin &#x1f60e; <span>7 days ago</span></h3>
+                  <p>
+                    <span>@Bomie</span> 이성은 듣기만 낙원을 품으며, 사랑의 살 그들은 사랑의 있는가? 모래뿐일 영원히 만물은 사막이다. 하는 공자는 찾아 고행을 것이다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="thread-content-chat">  
+                <div class="content-chat-img">
+                  <img src="src/img/Rectangle-5.png" alt="">
+                </div>
+                <div class="content-chat-thread">
+                  <h3>Yujin &#x1f601; <span>7 days ago</span></h3>
+                  <p>
+                    이성은 듣기만 낙원을 품으며, 사랑의 살 그들은 사랑의 있는가? 모래뿐일 영원히 만물은 사막이다. 하는 공자는 찾아 고행을 것이다.
+                  </p>
+                  <a href="">http://hangul.thefron.measdfa
+                    sfdhasdfha;lsfasdasd/</a>
+                </div>
+              </div>
+
+              <div class="thread-content-chat">  
+                <div class="content-chat-img hidden-img">
+                  <img src="src/img/Rectangle-6.png" alt="">
+                </div>
+                <div class="content-chat-thread">
+                  <h3> &#x1f7e8; DeviceAtlas</h3>
+                  <p class="link"><strong>The Most Popular iPhones of 2020</strong></p>
+                  <p>
+                    Dictumst neque augue consectetur orci tempor felis id congue urna. Nibh purus tincidunt sit nunc rhoncus integer hac. Lectus nec duis aliquam morbi est. Morbi eros 
+                  </p>
+                  <p><span>Dec 3rd, 2020</span>(32kB)</p>
+                  <img class="img-post" src="src/img/Rectangle-7.png" alt="">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="chat-input-thread">
+              <span style="margin-left: 20px; margin-top: 5px; color: #BBB">Reply...</span>
+              <div class="chat-input-down">
+                <i class='bx bx-plus-circle plus' ></i>
+                <img src="src/img/chat.png" alt="">
+                <i class='bx bxs-send' ></i>
+              </div>
+            </div>
+
+          </section>
+
+        </section>
+
+      <!-- CHAT -->
+
     </main>
+
+    <script src="https://kit.fontawesome.com/e0ea792a46.js" crossorigin="anonymous"></script>
   </body>
 </html>
